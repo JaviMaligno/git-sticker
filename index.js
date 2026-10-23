@@ -1,9 +1,9 @@
-const inquirer = require('inquirer');
 const chalk = require('chalk');
 const NodeRSA = require('node-rsa');
 const fs = require('fs');
 
 (async () => {
+  const { default: inquirer } = await import('inquirer');
   const answers = await inquirer.prompt([
     {
       type: 'input',
